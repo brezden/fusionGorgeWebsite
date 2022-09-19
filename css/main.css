@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2e2e2e;
+    position: relative;
+    min-height: 100vh;    
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.mainFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 90vh; 
+}
+
+.textFlex{
+    padding-right: 75px;
+}
+
+.titleText{
+    font-family: 'Silkscreen';
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin: .5rem;
+}
+
+.descriptionText{
+    font-family: 'Silkscreen';
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin: .5rem;
+}
+
+.robotAnimation{
+    height: 22.5rem;
+}
+
+.boxImage{
+    height: 13.5rem;
+}
+
+@media (max-width: 1075px){
+    .mainFlex{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .textFlex{
+        padding-right: 0px;
+    }
+
+    .titleText{
+        font-size: 5.5rem;
+    }
+    
+    .descriptionText{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 900px){
+    .titleText{
+        font-size: 4.5rem;
+    }
+    
+    .descriptionText{
+        font-size: 2.75rem;
+    }
+
+}
+
+@media (max-width: 725px){
+    .titleText{
+        font-size: 3.5rem;
+    }
+    
+    .descriptionText{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 600px){
+    .titleText{
+        font-size: 2.75rem;
+    }
+    
+    .descriptionText{
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 475px){
+    .mainFlex{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .titleText{
+        font-size: 3.5rem;
+    }
+    
+    .descriptionText{
+        font-size: 2.25rem;
+    }
+
+}
+
+@media (max-width: 400px){
+    .robotAnimation{
+        height: 17.5rem;
+    }
+    
+    .boxImage{
+        height: 10.5rem;
+    }
+}
+
+@media (max-width: 285px){
+    .robotAnimation{
+        height: 14.5rem;
+    }
+    
+    .boxImage{
+        height: 8.5rem;
+    }
+}
